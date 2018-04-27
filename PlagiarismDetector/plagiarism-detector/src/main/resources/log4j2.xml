@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Appenders>
+
+		<!--Email Api Logger Configuration -->
+		<SMTP name="Mail" subject="Plagiarism Detector System error" to="ved.p@husky.neu.edu"
+			from="team101msd@gmail.com" smtpHost="smtp.googlemail.com" smtpPort="465"
+			smtpProtocol="smtps" smtpUsername="team101msd@gmail.com"
+			smtpPassword="Team101@MSD" smtpDebug="false" bufferSize="50">
+
+			<ThresholdFilter level="error" onMatch="NEUTRAL"
+				onMismatch="DENY" />
+			<PatternLayout>
+				<pattern>%d{yyyy-MMM-dd HH:mm:ss,SSS} %5p %m%n</pattern>
+			</PatternLayout>
+		</SMTP>
+
+		<!--Next Generation api call for faster performace -->
+		<Async name="AsyncMailer">
+			<AppenderRef ref="Mail" />
+		</Async>
+
+		<!--Rolling log file with date appended -->
+		<RollingFile name="loggingfile" fileName="logs/plagiarismdetectorlog.log"
+			filePattern="logs/logFile%d{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<pattern>%d{yyyy-MMM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n </pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+			</Policies>
+		</RollingFile>
+
+		<!--Setup for console Appenders -->
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="[%-5level] %d{yyyy-MMM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
+		</Console>
+
+	</Appenders>
+
+	<!--Loggers Root has all info threshold added in email -->
+	<Loggers>
+		<Root level="info" additivity="false">
+			<AppenderRef ref="loggingfile" />
+			<AppenderRef ref="AsyncMailer" />
+		</Root>
+	</Loggers>
+
+</Configuration>
