@@ -6,7 +6,6 @@ Following are the links of the application:
 [System Demo](https://www.youtube.com/watch?v=xacJUkbw_BU&feature=youtu.be)
 [System Setup](https://www.youtube.com/watch?v=2g5RY8CKiXE)
 [Final Presentation](https://www.youtube.com/watch?v=3BlBaAcXpr8)
-[Jenkins Link](http://ec2-18-216-3-127.us-east-2.compute.amazonaws.com:8080/)
 
 
 
