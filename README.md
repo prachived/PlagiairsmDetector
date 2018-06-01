@@ -1,10 +1,4 @@
-# team-101
-Team repo for Team 101 (Section 1, Team 1)
-Team members:
-  1. Ayush Shukla
-  2. Monica Malkani
-  3. Prachi Ved
-  4. Preyank Jain
+SpringBoot project to detect plagiarism in Python source code files.
 
 Following are the links of the application:
 
