@@ -2,7 +2,6 @@ SpringBoot project to detect plagiarism in Python source code files.
 
 Following are the links of the application:
 
-[Link to the live system](http://ec2-18-217-56-48.us-east-2.compute.amazonaws.com:8080/login)
 [System Demo](https://www.youtube.com/watch?v=xacJUkbw_BU&feature=youtu.be)
 [System Setup](https://www.youtube.com/watch?v=2g5RY8CKiXE)
 [Final Presentation](https://www.youtube.com/watch?v=3BlBaAcXpr8)
