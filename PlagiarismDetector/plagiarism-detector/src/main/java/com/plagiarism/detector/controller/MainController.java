@@ -37,7 +37,7 @@ import com.plagiarism.detector.utilities.SnippetGeneration;
 import com.sun.org.apache.bcel.internal.generic.NEW;
 
 /**
- * @author Monica Controller for spring application
+ * @author Prachi Controller for spring application
  *
  */
 @Controller
