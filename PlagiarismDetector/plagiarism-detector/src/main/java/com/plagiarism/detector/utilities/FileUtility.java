@@ -32,7 +32,7 @@ import com.amazonaws.services.s3.model.S3ObjectSummary;
 /**
  * Class that provides object for reading file to a string.
  * 
- * @author ashuk
+ * @author Prachi
  *
  */
 public class FileUtility {
