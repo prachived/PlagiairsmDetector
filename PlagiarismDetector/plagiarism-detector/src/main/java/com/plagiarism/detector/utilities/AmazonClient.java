@@ -23,7 +23,7 @@ import com.amazonaws.services.s3.model.PutObjectRequest;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 /**
- * @author Monica amazon client service
+ * @author Prachi amazon client service
  */
 @Service
 public class AmazonClient {
