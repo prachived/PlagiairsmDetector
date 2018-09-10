@@ -12,14 +12,8 @@ import javax.persistence.Version;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * 
- * User entity table
- * @author Monica
- *
- */
-/**
  * @author Prachi
- *
+ * User Entity Table
  */
 @Entity // This tells Hibernate to make a table out of this class
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = "name"))
