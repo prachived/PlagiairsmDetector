@@ -10,7 +10,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 /**
  * MainApp to run spring web application
  * 
- * @author Monica
+ * @author Prachi
  *
  */
 @SpringBootApplication
